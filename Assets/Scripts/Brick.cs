@@ -26,9 +26,13 @@ public class Brick : MonoBehaviour
             case 5:
                 block.SetColor("_BaseColor", Color.blue);
                 break;
+            case 3:
+                block.SetColor("_BaseColor", Color.black);
+                break;
             default:
                 block.SetColor("_BaseColor", Color.red);
                 break;
+
         }
         renderer.SetPropertyBlock(block);
     }
